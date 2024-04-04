@@ -12,8 +12,8 @@ using SalesWebMVC.Data;
 namespace SalesWebMVC.Migrations
 {
     [DbContext(typeof(SalesWebMVCContext))]
-    [Migration("20240404162256_OtherEntities")]
-    partial class OtherEntities
+    [Migration("20240404182901_AllEntities")]
+    partial class AllEntities
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,14 +53,17 @@ namespace SalesWebMVC.Migrations
                     b.Property<double>("Amount")
                         .HasColumnType("double precision");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("DateOnly")
+                        .HasColumnType("date");
 
                     b.Property<int>("SellerId")
                         .HasColumnType("integer");
 
                     b.Property<int>("Status")
                         .HasColumnType("integer");
+
+                    b.Property<TimeOnly>("TimeOnly")
+                        .HasColumnType("time without time zone");
 
                     b.HasKey("Id");
 
@@ -77,12 +80,11 @@ namespace SalesWebMVC.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("BaseSalary")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<double>("BaseSalary")
+                        .HasColumnType("double precision");
 
-                    b.Property<DateTime>("BirthDate")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("BirthDay")
+                        .HasColumnType("date");
 
                     b.Property<int>("DepartmentId")
                         .HasColumnType("integer");

@@ -3,7 +3,7 @@
     public enum SaleStatus
     {
         Pending,
-        Build,
+        Billed,
         Canceled
     }
 }
