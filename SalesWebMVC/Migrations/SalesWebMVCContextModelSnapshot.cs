@@ -80,7 +80,7 @@ namespace SalesWebMVC.Migrations
                     b.Property<double>("BaseSalary")
                         .HasColumnType("double precision");
 
-                    b.Property<DateOnly>("BirthDay")
+                    b.Property<DateOnly>("BirthDate")
                         .HasColumnType("date");
 
                     b.Property<int>("DepartmentId")

@@ -33,7 +33,7 @@ namespace SalesWebMVC.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
-                    BirthDay = table.Column<DateOnly>(type: "date", nullable: false),
+                    BirthDate = table.Column<DateOnly>(type: "date", nullable: false),
                     BaseSalary = table.Column<double>(type: "double precision", nullable: false),
                     DepartmentId = table.Column<int>(type: "integer", nullable: false)
                 },
