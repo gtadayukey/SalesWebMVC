@@ -8,8 +8,8 @@
         public DateOnly BirthDate { get; set; }
         public double BaseSalary { get; set; }
         public Department Department { get; set; }
+        public int DepartmentId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = [];
-
         public Seller() { }
 
         public Seller(string name, string email, DateOnly birthDate, double baseSalary, Department department)
