@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
 using SalesWebMVC.Models;
+using SalesWebMVC.Services.Exceptions;
 
 namespace SalesWebMVC.Services
 {
@@ -10,7 +11,7 @@ namespace SalesWebMVC.Services
 
         public List<Seller> FindAll()
         {
-            return _context.Seller.ToList();
+            return _context.Seller.OrderBy(s => s.Id).ToList();
         }
 
         public void Insert(Seller seller)
@@ -29,6 +30,25 @@ namespace SalesWebMVC.Services
             var seller = FindById(id);
             _context.Seller.Remove(seller);
             _context.SaveChanges();
+        }
+
+        public void Update(Seller seller)
+        {
+            if (!_context.Seller.Any(s => s.Id == seller.Id))
+            {
+                throw new NotFoundException("Id not found");
+            }
+
+            try
+            {
+                _context.Update(seller);
+                _context.SaveChanges();
+            }
+            catch(DbUpdateConcurrencyException e)
+            {
+                throw new DbConcurrencyException(e.Message);
+            }
+           
         }
 
     }
