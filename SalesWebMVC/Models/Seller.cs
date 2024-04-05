@@ -51,7 +51,9 @@ namespace SalesWebMVC.Models
 
         public double TotalSales(DateOnly inicial, DateOnly final)
         {
-            return Sales.Where(sr => sr.DateOnly >= inicial && sr.DateOnly <= final).Sum(sr => sr.Amount);
+            return Sales.Where(sr => sr.DateOnly >= inicial && sr.DateOnly <= final).
+                         Where(x => x.Status != Enums.SaleStatus.Canceled).
+                         Sum(sr => sr.Amount);
         }
     }
 }
