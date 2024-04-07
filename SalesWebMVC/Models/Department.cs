@@ -13,11 +13,6 @@
             Name = name;
         }
 
-        public void AddSeller(Seller seller)
-        {
-            Sellers.Add(seller);
-        }
-
         public double TotalSales(DateOnly inicial, DateOnly final)
         {
             return Sellers.Sum(seller => seller.TotalSales(inicial, final));

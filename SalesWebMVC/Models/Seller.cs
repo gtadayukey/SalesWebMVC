@@ -39,16 +39,6 @@ namespace SalesWebMVC.Models
             Department = department;
         }
 
-        public void AddSales(SalesRecord sr)
-        {
-            Sales.Add(sr);
-        }
-
-        public void RemoveSales(SalesRecord sr)
-        {
-            Sales.Remove(sr);
-        }
-
         public double TotalSales(DateOnly inicial, DateOnly final)
         {
             return Sales.Where(sr => sr.DateOnly >= inicial && sr.DateOnly <= final).
