@@ -21,19 +21,36 @@
 - The database will be created and seeded with initial data automatically.
 
 ## Images:
-
+**OBS: All the objects have this CRUD screens.**<br><br>
+Caption: Department Table Screen
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/bfb77e6a-a600-437d-943e-8af165917814)
-
-![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/8cd78d01-15fa-40bf-a266-9efa9569ca3a)
-
+<br>
+<br>
+Caption: Create Screen
+![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/f0d09169-7440-49b7-9563-42d0f3cc862b)
+<br>
+<br>
+Caption: Read Screen
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/1dd557ab-8e01-484b-a6d0-cc77e0ca8a01)
-
+<br>
+<br>
+Caption: Update Screen
+![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/8cd78d01-15fa-40bf-a266-9efa9569ca3a)
+<br>
+<br>
+Caption: Delete Screen
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/68d7a439-6b6c-4ace-ae3e-15e0b4b31c0b)
-
+<br>
+<br>
+Caption: Simple and Grouping Search Screen
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/0ef44551-0c7e-4d12-85f5-d4f992a9ccba)
-
+<br>
+<br>
+Caption: Simple Search Result Screen as Mobile Resolution
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/8b5df384-527f-48fd-ae64-f05719203764)
-
+<br>
+<br>
+Caption: Groupin Search Result Screen as Mobile Resolution
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/8bf27f14-0c5a-45a8-9b63-f7d664219040)
 
 
