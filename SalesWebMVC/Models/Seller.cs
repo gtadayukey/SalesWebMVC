@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 
 namespace SalesWebMVC.Models
 {
@@ -25,6 +26,8 @@ namespace SalesWebMVC.Models
         [DisplayFormat(DataFormatString = "{0:F2}")]
         [Display(Name = "Base Salary")]
         public double BaseSalary { get; set; }
+
+        [ValidateNever]
         public Department Department { get; set; }
         public int DepartmentId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = [];

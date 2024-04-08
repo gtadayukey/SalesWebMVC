@@ -2,7 +2,6 @@
 using SalesWebMVC.Models;
 using SalesWebMVC.Models.ViewModels;
 using SalesWebMVC.Services;
-using SalesWebMVC.Services.Exceptions;
 using System.Diagnostics;
 
 namespace SalesWebMVC.Controllers
@@ -29,6 +28,7 @@ namespace SalesWebMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Seller seller)
         {
+
             if (!ModelState.IsValid)
             {
                 var departments = await _departmentService.FindAllAsync();

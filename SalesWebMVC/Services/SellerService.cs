@@ -2,7 +2,6 @@
 using SalesWebMVC.Data;
 using SalesWebMVC.Models;
 using SalesWebMVC.Services.Exceptions;
-using System.Runtime.CompilerServices;
 
 namespace SalesWebMVC.Services
 {

@@ -1,21 +1,23 @@
 ﻿@model IEnumerable<SalesWebMVC.Models.Department>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Departments";
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-light">Create New</a>
 </p>
-<table class="table">
+
+<table class="table table-striped table-hover">
     <thead>
-        <tr>
-            <th>
+        <tr class="table-light">
+            <th class="text-dark">
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th></th>
+            <th class="text-dark">
+            </th>
         </tr>
     </thead>
     <tbody>
