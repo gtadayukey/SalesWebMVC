@@ -40,10 +40,14 @@
                 <select asp-for="Seller.DepartmentId" asp-items="@(new SelectList(Model.Departments, "Id", "Name"))" class="form-control"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-light mt-3" />
+                <input type="submit" value="Save" class="btn btn-primary mt-3" />
             </div>
         </form>
     </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-light mt-3">Back to List</a>
 </div>
 
 @section Scripts {
