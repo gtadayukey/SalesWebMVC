@@ -44,13 +44,13 @@ Caption: Delete Screen
 <br>
 Caption: Simple and Grouping Search Screen
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/0ef44551-0c7e-4d12-85f5-d4f992a9ccba)
+<br><br>
+Caption: Simple Search Result Screen on Mobile Resolution
 <br>
-<br>
-Caption: Simple Search Result Screen as Mobile Resolution
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/8b5df384-527f-48fd-ae64-f05719203764)
+<br><br>
+Caption: Groupin Search Result Screen on Mobile Resolution
 <br>
-<br>
-Caption: Groupin Search Result Screen as Mobile Resolution
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/8bf27f14-0c5a-45a8-9b63-f7d664219040)
 
 
