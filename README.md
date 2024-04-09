@@ -1,9 +1,9 @@
 # SalesWebMVC
-- SalesWebMVC is a comprehensive sales management system designed to streamline sales operations. It facilitates the management of departments, sellers, and sales records with seamless relation between them. Built on ASP.NET Core MVC, the system offers a user-friendly interface for performing CRUD operations on departments, sellers, and sales records. Additionally, it provides robust search functionality for both simple and grouped sales records. Leveraging Entity Framework with PostgreSQL, SalesWebMVC ensures efficient data handling and storage. The frontend is developed using Razor Pages with Bootstrap, offering a responsive and visually appealing user experience.
+- SalesWebMVC is a comprehensive sales management system designed to streamline sales operations. It facilitates the management of departments, sellers, and sales records with seamless relation between them. Built on ASP.NET Core MVC, the system offers a user-friendly interface for performing CRUD operations on departments and sellers. Additionally, it provides robust search functionality for both simple and grouped sales records. Leveraging Entity Framework with PostgreSQL, SalesWebMVC ensures efficient data handling and storage. The frontend is developed using Razor Pages with Bootstrap, offering a responsive and visually appealing user experience.
 
 ## Features
   
-- CRUD Operations: Seamlessly manage departments, sellers, and sales records with Create, Read, Update, and Delete (CRUD) operations.
+- CRUD Operations: Seamlessly manage departments and sellers with Create, Read, Update, and Delete (CRUD) operations.
 - Simple Sales Record Search: Easily search through sales records based on various criteria, enabling quick access to specific data.
 - Grouping Sales Record Search: Effortlessly group and filter sales records to analyze trends and patterns, providing valuable insights into sales performance and trends.
 
@@ -21,7 +21,7 @@
 - The database will be created and seeded with initial data automatically.
 
 ## Images:
-**OBS: All the objects have this CRUD screens.**<br><br>
+**OBS: Sellers have this CRUD screens as well.**<br><br>
 Caption: Department Table Screen
 ![image](https://github.com/gtadayukey/SalesWebMVC/assets/100155376/bfb77e6a-a600-437d-943e-8af165917814)
 <br>
